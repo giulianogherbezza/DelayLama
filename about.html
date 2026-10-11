@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="de">
 <head>
     <title>About Us - Delay Lama</title>
     <meta charset="utf-8" />
@@ -38,50 +38,12 @@
             </header>
             <section class="wrapper style5">
                 <div class="inner">
-                    <section class="centered-text">
-                        <h3>Delay Lama – Der Sound der 70er mit neuer Power</h3>
-                        <p>
-                            Im Jahr 2022 betraten die drei Lamas die heiligen Hallen des Yagwud Recording Studios in Biel.
-                            Gemeinsam mit dem legendären Sirup Gagavil, einem Meister des Tons, haben sie ihr erstes Album
-                            <strong>"A Little Taste"</strong> aufgenommen. Ein Werk, das den Geist der 70er Jahre einfängt und
-                            mit frischer Energie und unbändiger Attitüde durchdringt.
-                        </p>
-                        <p>
-                            Delay Lama bringt den Rock'n'Roll zurück auf die Bühne! Ihre Musik ist ein wilder Ritt durch die Zeit,
-                            eine Hommage an die Urväter des Rock. Mit <strong>brachialen Riffs, druckvollen Bässen</strong> und
-                            <strong>energiegeladenen Beats</strong> entfachen sie ein Feuerwerk aus purer Rock-'n'-Roll-Power.
-                        </p>
-                        <p>
-                            <strong>Bandmitglieder:</strong><br>
-                            🎸 <strong>Roger Jaggi</strong> – Gesang & Gitarre<br>
-                            🎸 <strong>Adrian Brenner</strong> – Bass<br>
-                            🥁 <strong>Fabian Gloor</strong> – Drums
-                        </p>
-                        <p>
-                            Das Debütalbum wurde am <strong>13.06.2022</strong> in digitaler Form veröffentlicht.
-                            Vinyl-Liebhaber können sich freuen – die LP ist bereits in Produktion!
-                        </p>
-						<div style="text-align: center; width: 100%; display: flex; flex-direction: column; align-items: center;">
-							<p><strong>Höre uns jetzt auf:</strong></p>
-							<ul class="icons" style="font-size: 2em;">
-								<li>
-									<a href="https://open.spotify.com/intl-de/album/1wUNiM6NdBWZ2GtOLhCq0I?si=rzpg2cOBRlGtY7ImK-QXmQ" target="_blank" class="icon brands fa-spotify">
-										<span class="label">Spotify</span>
-									</a>
-									<p>Spotify</p>
-								</li>
-								<li>
-									<a href="https://music.apple.com/ch/artist/delay-lama/1690791641" target="_blank" class="icon brands fa-apple">
-										<span class="label">Apple Music</span>
-									</a>
-									<p>Apple Music</p>
-								</li>
-							</ul>
-                    </section>
+                    <!-- Bandtext (content/about.json) -->
+                    <section class="centered-text" data-cms="about"></section>
                 </div>
             </section>
 
-            <!-- Gallery Section -->
+            <!-- Bildergalerie (content/gallery.json) -->
             <section class="wrapper style3 special">
                 <div class="inner">
                     <header class="major">
@@ -89,17 +51,7 @@
                         <p>Einblicke hinter die Kulissen und unvergessliche Konzertmomente.</p>
                     </header>
                     <div class="box alt">
-                        <div class="row gtr-50 gtr-uniform">
-                            <div class="col-4"><span class="image fit"><img src="images/Adrian.jpg" alt="Delay Lama Live" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="images/Roger.jpg" alt="Backstage" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="images/Background.jpg" alt="Soundcheck" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="images/Fabian.jpg" alt="Recording Studio" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="images/adrianportrait.JPG" alt="Delay Lama in Action" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="images/z7live.jpg" alt="Delay Lama in Action" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="images/z7live2.jpg" alt="Delay Lama in Action" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="images/fabiandrums.jpg" alt="Fans und Publikum" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="images/rogerguitar.jpg" alt="Fans und Publikum" /></span></div>
-                        </div>
+                        <div class="row gtr-50 gtr-uniform" data-cms="gallery"></div>
                     </div>
                 </div>
             </section>
@@ -107,14 +59,15 @@
 
         <!-- Footer -->
         <footer id="footer">
-            <ul class="icons">
-                <li><a href="https://www.facebook.com/delaylamaband/" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                <li><a href="https://www.instagram.com/delay_lama_band/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="https://www.youtube.com/@Delay_Lama/" target="_blank" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
-                <li><a href="mailto:delay_lama@hotmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+            <ul class="icons" data-cms="socials">
+                <li><a href="https://www.facebook.com/delaylamaband/" target="_blank" rel="noopener" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="https://www.instagram.com/delay_lama_band/" target="_blank" rel="noopener" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="https://www.youtube.com/@Delay_Lama/" target="_blank" rel="noopener" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+                <li><a href="mailto:delay_lama@hotmail.com" class="icon solid fa-envelope"><span class="label">E-Mail</span></a></li>
             </ul>
             <ul class="copyright">
-                <li>&copy; DelayLama 2025</li>
+                <li>&copy; DelayLama <span data-cms="year">2025</span></li>
+                <li>Design: <a href="https://html5up.net" target="_blank" rel="noopener">HTML5 UP</a></li>
             </ul>
         </footer>
     </div>
@@ -127,6 +80,7 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/content.js"></script>
 
 </body>
 </html>

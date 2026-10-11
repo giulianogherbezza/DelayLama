@@ -1,0 +1,137 @@
+# Sveltia CMS – Konfiguration
+# Doku: https://github.com/sveltia/sveltia-cms
+#
+# Jede Änderung im CMS wird als Commit in den Branch "main" geschrieben.
+# GitHub Pages veröffentlicht die Seite danach automatisch neu (ca. 1 Minute).
+
+backend:
+  name: github
+  repo: giulianogherbezza/DelayLama
+  branch: main
+  # Login-Server (Sveltia CMS Authenticator auf Cloudflare Workers).
+  # Wird beim Einrichten des Logins eingetragen:
+  # base_url: https://sveltia-cms-auth.<dein-account>.workers.dev
+
+# Hochgeladene Bilder landen im Ordner images/ des Repos.
+media_folder: images
+public_folder: images
+
+collections:
+  - name: inhalte
+    label: Inhalte
+    format: json
+    files:
+      # ---------------------------------------------------------------- Konzerte
+      - name: events
+        label: Konzerte
+        file: content/events.json
+        fields:
+          - name: events
+            label: Konzerte
+            label_singular: Konzert
+            widget: list
+            add_to_top: true
+            summary: "{{fields.date | date('DD.MM.YYYY')}} – {{fields.place}} {{fields.venue}}"
+            hint: >-
+              Die Reihenfolge spielt keine Rolle: Die Webseite sortiert automatisch
+              und zeigt vergangene Konzerte unter «Vergangene Konzerte».
+            fields:
+              - name: date
+                label: Datum
+                widget: datetime
+                time_format: false
+                format: YYYY-MM-DD
+              - name: place
+                label: Ort
+                widget: string
+                hint: z. B. «Bern BE»
+              - name: venue
+                label: Location / Anlass
+                widget: string
+                required: false
+                hint: z. B. «Gustav» oder «Openair Deisswil»
+              - name: link
+                label: Link
+                widget: string
+                required: false
+                hint: Optional, z. B. Link zum Veranstalter oder zu den Tickets
+
+      # ---------------------------------------------------------------- Bandmitglieder
+      - name: members
+        label: Bandmitglieder (Startseite)
+        file: content/members.json
+        fields:
+          - name: members
+            label: Bandmitglieder
+            label_singular: Bandmitglied
+            widget: list
+            summary: "{{fields.name}} – {{fields.role}}"
+            fields:
+              - { name: name, label: Name, widget: string }
+              - { name: role, label: Instrument / Rolle, widget: string }
+              - { name: image, label: Foto, widget: image }
+              - { name: text, label: Text, widget: text }
+
+      # ---------------------------------------------------------------- About us
+      - name: about
+        label: About us
+        file: content/about.json
+        fields:
+          - { name: title, label: Titel, widget: string }
+          - name: body
+            label: Text
+            widget: markdown
+            buttons: [bold, italic, link, bulleted-list]
+            editor_components: []
+          - { name: spotify, label: Spotify-Link, widget: string, required: false }
+          - { name: apple_music, label: Apple-Music-Link, widget: string, required: false }
+
+      # ---------------------------------------------------------------- Galerie
+      - name: gallery
+        label: Bildergalerie (About us)
+        file: content/gallery.json
+        fields:
+          - name: images
+            label: Bilder
+            label_singular: Bild
+            widget: list
+            summary: "{{fields.alt}}"
+            fields:
+              - { name: image, label: Bild, widget: image }
+              - { name: alt, label: Beschreibung, widget: string, hint: Kurze Beschreibung des Bildes (für Suchmaschinen und Screenreader) }
+
+      # ---------------------------------------------------------------- Downloads
+      - name: downloads
+        label: Downloads
+        file: content/downloads.json
+        fields:
+          - { name: intro, label: Einleitungstext, widget: text, required: false }
+          - name: files
+            label: Dateien
+            label_singular: Datei
+            widget: list
+            summary: "{{fields.label}}"
+            fields:
+              - { name: label, label: Button-Text, widget: string }
+              - name: file
+                label: Datei (PDF)
+                widget: file
+                media_folder: /assets/docs
+                public_folder: assets/docs
+
+      # ---------------------------------------------------------------- Einstellungen
+      - name: settings
+        label: Video & Social Media
+        file: content/settings.json
+        fields:
+          - name: video
+            label: Video (Startseite)
+            widget: object
+            fields:
+              - { name: title, label: Titel, widget: string }
+              - { name: subtitle, label: Untertitel, widget: string, required: false }
+              - { name: url, label: YouTube-Link, widget: string, hint: "z. B. https://www.youtube.com/watch?v=…" }
+          - { name: facebook, label: Facebook, widget: string, required: false }
+          - { name: instagram, label: Instagram, widget: string, required: false }
+          - { name: youtube, label: YouTube-Kanal, widget: string, required: false }
+          - { name: email, label: E-Mail-Adresse, widget: string, required: false }

@@ -89,6 +89,18 @@ input, select, textarea {
     height: 100%;
 }
 
+/* "Höre uns jetzt auf" (About us) */
+.listen-on {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.listen-on .icons {
+    font-size: 2em;
+}
+
 
 /* Basic */
 

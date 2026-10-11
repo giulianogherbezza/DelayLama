@@ -1,0 +1,7 @@
+{
+  "intro": "Hier kannst du unseren Tech-Rider und Stage-Rider als PDF herunterladen.",
+  "files": [
+    { "label": "🎛️ Tech-Rider herunterladen", "file": "assets/docs/DelayLama_Tech-Rider.pdf" },
+    { "label": "🎤 Stage-Rider herunterladen", "file": "assets/docs/DelayLama_Stage-Rider.pdf" }
+  ]
+}

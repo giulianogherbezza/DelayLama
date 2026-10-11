@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
   <head>
-    <title>Events - Delay Lama</title>
+    <title>Downloads - Delay Lama</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -37,47 +37,15 @@
       <!-- Main -->
       <article id="main">
         <header>
-          <h2>Bevorstehende Events</h2>
-          <p>Hier findest du alle unsere anstehenden Konzerte!</p>
+          <h2>Downloads</h2>
+          <p>Tech-Rider, Stage-Rider und mehr</p>
         </header>
         <section class="wrapper style5">
           <div class="inner">
-            <!-- Event Liste -->
-            <section id="event-list">
-              <h3>Nächste Konzerte</h3>
-              <ul id="events" class="alt">
-                <li><strong>25. Mai 2025</strong> - Rock am See, Zürich</li>
-                <li><strong>10. Juni 2025</strong> - Open Air St. Gallen</li>
-                <li><strong>5. Juli 2025</strong> - Montreux Jazz Festival</li>
-              </ul>
-            </section>
-            <hr />
-
-            <!-- Downloads für Tech- und Stage-Rider -->
+            <!-- Downloads (content/downloads.json) -->
             <section id="rider-downloads">
               <h3>Download Bereich</h3>
-              <p>
-                Hier kannst du unseren Tech-Rider und Stage-Rider als PDF
-                herunterladen.
-              </p>
-              <ul class="actions">
-                <li>
-                  <a
-                    href="assets/docs/DelayLama_Tech-Rider.pdf"
-                    class="button primary"
-                    download
-                    >🎛️ Tech-Rider herunterladen</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="assets/docs/DelayLama_Stage-Rider.pdf"
-                    class="button primary"
-                    download
-                    >🎤 Stage-Rider herunterladen</a
-                  >
-                </li>
-              </ul>
+              <div data-cms="downloads"></div>
             </section>
           </div>
         </section>
@@ -85,41 +53,15 @@
 
       <!-- Footer -->
       <footer id="footer">
-        <ul class="icons">
-          <li>
-            <a
-              href="https://www.facebook.com/delaylamaband/"
-              target="_blank"
-              class="icon brands fa-facebook-f"
-              ><span class="label">Facebook</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/delay_lama_band/"
-              target="_blank"
-              class="icon brands fa-instagram"
-              ><span class="label">Instagram</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/@Delay_Lama/"
-              target="_blank"
-              class="icon brands fa-youtube"
-              ><span class="label">YouTube</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="mailto:delay_lama@hotmail.com"
-              class="icon solid fa-envelope"
-              ><span class="label">Email</span></a
-            >
-          </li>
+        <ul class="icons" data-cms="socials">
+          <li><a href="https://www.facebook.com/delaylamaband/" target="_blank" rel="noopener" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+          <li><a href="https://www.instagram.com/delay_lama_band/" target="_blank" rel="noopener" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+          <li><a href="https://www.youtube.com/@Delay_Lama/" target="_blank" rel="noopener" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+          <li><a href="mailto:delay_lama@hotmail.com" class="icon solid fa-envelope"><span class="label">E-Mail</span></a></li>
         </ul>
         <ul class="copyright">
-          <li>&copy; DelayLama 2025</li>
+          <li>&copy; DelayLama <span data-cms="year">2025</span></li>
+          <li>Design: <a href="https://html5up.net" target="_blank" rel="noopener">HTML5 UP</a></li>
         </ul>
       </footer>
     </div>
@@ -132,5 +74,6 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/content.js"></script>
   </body>
 </html>

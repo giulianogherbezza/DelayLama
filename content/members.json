@@ -1,0 +1,22 @@
+{
+  "members": [
+    {
+      "name": "Roger Jaggi",
+      "role": "Guitar & Vocals",
+      "image": "images/Roger.jpg",
+      "text": "Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula."
+    },
+    {
+      "name": "Adrian Brenner",
+      "role": "Bass",
+      "image": "images/Adrian.jpg",
+      "text": "Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula."
+    },
+    {
+      "name": "Fabian Gloor",
+      "role": "Drums",
+      "image": "images/Fabian.jpg",
+      "text": "Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula."
+    }
+  ]
+}

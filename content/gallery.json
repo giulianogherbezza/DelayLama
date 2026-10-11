@@ -1,0 +1,13 @@
+{
+  "images": [
+    { "image": "images/Adrian.jpg", "alt": "Delay Lama Live" },
+    { "image": "images/Roger.jpg", "alt": "Backstage" },
+    { "image": "images/Background.jpg", "alt": "Soundcheck" },
+    { "image": "images/Fabian.jpg", "alt": "Recording Studio" },
+    { "image": "images/adrianportrait.JPG", "alt": "Delay Lama in Action" },
+    { "image": "images/z7live.jpg", "alt": "Delay Lama in Action" },
+    { "image": "images/z7live2.jpg", "alt": "Delay Lama in Action" },
+    { "image": "images/fabiandrums.jpg", "alt": "Fans und Publikum" },
+    { "image": "images/rogerguitar.jpg", "alt": "Fans und Publikum" }
+  ]
+}
