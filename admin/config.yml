@@ -8,9 +8,8 @@ backend:
   name: github
   repo: giulianogherbezza/DelayLama
   branch: main
-  # Login-Server (Sveltia CMS Authenticator auf Cloudflare Workers).
-  # Wird beim Einrichten des Logins eingetragen:
-  # base_url: https://sveltia-cms-auth.<dein-account>.workers.dev
+  # Login-Server (Sveltia CMS Authenticator auf Cloudflare Workers)
+  base_url: https://sveltia-cms-auth.giuliano-gherbezza.workers.dev
 
 # Hochgeladene Bilder landen im Ordner images/ des Repos.
 media_folder: images
