@@ -1,6 +1,12 @@
 {
   "events": [
     {
+      "date": "2026-05-30",
+      "place": "Brienz",
+      "venue": "Judihui-Fest",
+      "link": ""
+    },
+    {
       "date": "2026-03-07",
       "place": "Biel",
       "venue": "Pooc",
