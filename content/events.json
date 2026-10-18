@@ -1,16 +1,10 @@
 {
   "events": [
     {
-      "date": "2025-01-10",
-      "place": "Himmel",
-      "venue": "Schulenburg ZH",
-      "link": ""
-    },
-    {
       "date": "2026-10-10",
       "place": "Pontresina",
-      "venue": "Visais",
-      "link": ""
+      "venue": "Visai",
+      "link": "https://www.visavipontresina.ch"
     },
     {
       "date": "2026-10-09",
