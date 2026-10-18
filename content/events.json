@@ -1,6 +1,30 @@
 {
   "events": [
     {
+      "date": "2025-05-03",
+      "place": "Spiez",
+      "venue": "Rox",
+      "link": ""
+    },
+    {
+      "date": "2025-08-01",
+      "place": "S-chanf",
+      "venue": "Open Air Champella",
+      "link": ""
+    },
+    {
+      "date": "2026-02-21",
+      "place": "Bern",
+      "venue": "Mahogany Hall Bern",
+      "link": ""
+    },
+    {
+      "date": "2025-10-31",
+      "place": "Thun",
+      "venue": "Mc Arthurs Pub",
+      "link": ""
+    },
+    {
       "date": "2026-10-10",
       "place": "Pontresina",
       "venue": "Visai",
@@ -16,18 +40,6 @@
       "date": "2025-01-31",
       "place": "Alpstätz GR",
       "venue": "",
-      "link": ""
-    },
-    {
-      "date": "2025-06-10",
-      "place": "St. Gallen SG",
-      "venue": "Open Air St. Gallen",
-      "link": ""
-    },
-    {
-      "date": "2025-07-05",
-      "place": "Montreux VD",
-      "venue": "Montreux Jazz Festival",
       "link": ""
     },
     {
