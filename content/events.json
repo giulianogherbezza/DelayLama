@@ -1,7 +1,13 @@
 {
   "events": [
     {
-      "date": "2025-05-03",
+      "date": "2026-05-30",
+      "place": "Brienz",
+      "venue": "Judihui Fest",
+      "link": ""
+    },
+    {
+      "date": "2026-05-30",
       "place": "Spiez",
       "venue": "Rox",
       "link": ""
