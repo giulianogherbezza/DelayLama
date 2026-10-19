@@ -1,6 +1,36 @@
 {
   "events": [
     {
+      "date": "2025-08-22",
+      "place": "Montperveyres",
+      "venue": "La Bouelee Festival",
+      "link": ""
+    },
+    {
+      "date": "2025-08-22",
+      "place": "Homburg",
+      "venue": "Bierock Open Air",
+      "link": ""
+    },
+    {
+      "date": "2025-08-09",
+      "place": "Basel",
+      "venue": "Biker Days",
+      "link": ""
+    },
+    {
+      "date": "2025-07-26",
+      "place": "Sangernboden",
+      "venue": "Alpenair",
+      "link": ""
+    },
+    {
+      "date": "2025-07-24",
+      "place": "Biel",
+      "venue": "Cafe du Commerce",
+      "link": ""
+    },
+    {
       "date": "2026-05-30",
       "place": "Brienz",
       "venue": "Judihui-Fest",
