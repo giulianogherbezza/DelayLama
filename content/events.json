@@ -1,6 +1,12 @@
 {
   "events": [
     {
+      "date": "2026-12-12",
+      "place": "Steckborn",
+      "venue": "Helter Skelter Pub",
+      "link": ""
+    },
+    {
       "date": "2025-08-22",
       "place": "Montperveyres",
       "venue": "La Bouelee Festival",
