@@ -1,6 +1,12 @@
 {
   "events": [
     {
+      "date": "2027-05-27",
+      "place": "Thun",
+      "venue": "Cafe Bar Mokka",
+      "link": "https://mokka.ch/event/delay-lama-loretta/"
+    },
+    {
       "date": "2026-12-12",
       "place": "Steckborn",
       "venue": "Helter Skelter Pub",
